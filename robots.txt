@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xd188766-arch.github.io/yudongweilai/sitemap.xml

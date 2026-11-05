@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="小程序码占位图">
+  <g fill="#0f7a45">
+    <path d="M14 14h46v46H14zm8 8v30h30V22z"/>
+    <circle cx="37" cy="37" r="6"/>
+    <path d="M140 14h46v46h-46zm8 8v30h30V22z"/>
+    <circle cx="163" cy="37" r="6"/>
+    <path d="M14 140h46v46H14zm8 8v30h30v-30z"/>
+    <circle cx="37" cy="163" r="6"/>
+    <rect x="80" y="14" width="9" height="9" rx="2"/>
+    <rect x="97" y="14" width="9" height="9" rx="2"/>
+    <rect x="114" y="14" width="9" height="9" rx="2"/>
+    <rect x="80" y="31" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="114" y="31" width="9" height="9" rx="2"/>
+    <rect x="80" y="48" width="9" height="9" rx="2"/>
+    <rect x="97" y="48" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="14" y="80" width="9" height="9" rx="2"/>
+    <rect x="31" y="80" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="48" y="80" width="9" height="9" rx="2"/>
+    <rect x="14" y="97" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="48" y="97" width="9" height="9" rx="2"/>
+    <rect x="14" y="114" width="9" height="9" rx="2"/>
+    <rect x="31" y="114" width="9" height="9" rx="2"/>
+    <rect x="48" y="114" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="140" y="80" width="9" height="9" rx="2"/>
+    <rect x="157" y="80" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="174" y="80" width="9" height="9" rx="2"/>
+    <rect x="140" y="97" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="174" y="97" width="9" height="9" rx="2"/>
+    <rect x="140" y="114" width="9" height="9" rx="2"/>
+    <rect x="157" y="114" width="9" height="9" rx="2"/>
+    <rect x="80" y="140" width="9" height="9" rx="2"/>
+    <rect x="97" y="140" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="114" y="140" width="9" height="9" rx="2"/>
+    <rect x="80" y="157" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="114" y="157" width="9" height="9" rx="2"/>
+    <rect x="80" y="174" width="9" height="9" rx="2"/>
+    <rect x="97" y="174" width="9" height="9" rx="2"/>
+    <rect x="114" y="174" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="140" y="140" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="157" y="140" width="9" height="9" rx="2"/>
+    <rect x="174" y="140" width="9" height="9" rx="2"/>
+    <rect x="140" y="157" width="9" height="9" rx="2"/>
+    <rect x="174" y="157" width="9" height="9" rx="2" opacity=".55"/>
+    <rect x="157" y="174" width="9" height="9" rx="2"/>
+    <rect x="174" y="174" width="9" height="9" rx="2"/>
+  </g>
+</svg>

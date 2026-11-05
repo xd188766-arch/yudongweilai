@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微信小程序 · 广财羽动未来俱乐部</title>
+<meta name="description" content="广财羽动未来俱乐部微信小程序入口：活动报名、场地互助、战报与通知。含小程序码位置与使用指引。">
+<meta name="theme-color" content="#0d6338">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- SEO:START -->
+<link rel="canonical" href="https://xd188766-arch.github.io/yudongweilai/miniprogram.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="广财羽动未来俱乐部">
+<meta property="og:title" content="微信小程序 · 广财羽动未来俱乐部">
+<meta property="og:description" content="广财羽动未来俱乐部微信小程序入口：活动报名、场地互助、战报与通知。含小程序码位置与使用指引。">
+<meta property="og:url" content="https://xd188766-arch.github.io/yudongweilai/miniprogram.html">
+<meta property="og:image" content="https://xd188766-arch.github.io/yudongweilai/assets/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="微信小程序 · 广财羽动未来俱乐部">
+<meta name="twitter:description" content="广财羽动未来俱乐部微信小程序入口：活动报名、场地互助、战报与通知。含小程序码位置与使用指引。">
+<meta name="twitter:image" content="https://xd188766-arch.github.io/yudongweilai/assets/img/og-cover.png">
+<meta name="author" content="广财羽动未来俱乐部">
+<!-- SEO:END -->
+</head>
+<body>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html" aria-label="广财羽动未来俱乐部首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#0d6338"/>
+        <path d="M25.4 44.6 17.2 18.9Q32 13.4 46.8 18.9L38.6 44.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M32 42.8V16.2" stroke="#c9f26d" stroke-width="1.6" opacity=".85"/>
+        <path d="M27.6 43.8 22.6 17.6M36.4 43.8l5-26.2" stroke="#c9f26d" stroke-width="1.3" opacity=".6"/>
+        <ellipse cx="32" cy="47" rx="6.4" ry="5" fill="#c9f26d"/>
+      </svg>
+      <span class="brand-text"><b>羽动未来</b><em>GDUFE Badminton</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="members.html">组织成员</a>
+      <a href="history.html">俱乐部历史</a>
+      <a href="recommend.html">俱乐部推荐</a>
+      <a href="resources.html">资源</a>
+      <a href="gdufe.html">广财官网</a>
+      <a href="miniprogram.html" class="nav-cta on">小程序</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap mp-hero">
+      <div class="reveal is-in">
+        <span class="badge-soon">小程序即将上线</span>
+        <h1 class="display" style="font-size:clamp(2.1rem,4.6vw,3.5rem); margin-top:18px">俱乐部的入口，<br>装进微信里。</h1>
+        <p class="lead">
+          活动报名、场地互助、积分与战报、临时通知——以后都在小程序里。
+          在正式上线前，页面这枚二维码就是它的位置。
+        </p>
+        <div class="hero-meta">
+          <span class="chip">微信扫码进入</span>
+          <span class="chip">无需下载</span>
+          <span class="chip">报名 / 场地 / 战报</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#howto">怎么用</a>
+          <button class="btn btn-ghost" type="button" data-copy="2981516286">复制 QQ 号进群</button>
+        </div>
+      </div>
+
+      <aside class="qr-box reveal is-in d2" aria-label="小程序码位置">
+        <div class="qr-frame">
+          <img class="qr-art" src="assets/img/qr-art.svg" alt="小程序码占位图">
+          <div class="qr-tip">此处放置俱乐部小程序码</div>
+        </div>
+        <div class="qr-cap">
+          <b>广财羽动未来</b>
+          <span>微信「扫一扫」进入小程序</span>
+        </div>
+        <div class="pill-soon" style="margin-top:14px">上线后替换为真实小程序码</div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 三步 -->
+  <section class="section" id="howto">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">使用方式</span>
+          <h2 class="h2">三步进到俱乐部</h2>
+          <p>小程序上线后，按这个路径进来；现在也可以先用 QQ 群。</p>
+        </div>
+        <span class="sec-num">How to</span>
+      </div>
+
+      <div class="grid g3">
+        <article class="card hover reveal">
+          <div class="step" style="grid-template-columns:44px 1fr; gap:14px">
+            <span class="step-n" style="width:44px; height:44px; font-size:16px; border-radius:13px">01</span>
+            <div><h3 class="h3">打开微信</h3><p style="font-size:13.5px">扫上方小程序码，或在微信搜索栏输入「广财羽动未来」。</p></div>
+          </div>
+          <div class="tags" style="margin-top:18px"><span class="tag">扫一扫</span><span class="tag">微信搜索</span></div>
+        </article>
+
+        <article class="card hover reveal d1">
+          <div class="step" style="grid-template-columns:44px 1fr; gap:14px">
+            <span class="step-n" style="width:44px; height:44px; font-size:16px; border-radius:13px">02</span>
+            <div><h3 class="h3">绑定身份</h3><p style="font-size:13.5px">首次进入填写姓名、学院、年级与球龄，后续活动报名不用重复填。</p></div>
+          </div>
+          <div class="tags" style="margin-top:18px"><span class="tag">一次性填写</span><span class="tag">仅社团内部可见</span></div>
+        </article>
+
+        <article class="card hover reveal d2">
+          <div class="step" style="grid-template-columns:44px 1fr; gap:14px">
+            <span class="step-n" style="width:44px; height:44px; font-size:16px; border-radius:13px">03</span>
+            <div><h3 class="h3">报名与约场</h3><p style="font-size:13.5px">在「活动」里接龙报名，在「场地」里看当天放场与互助信息。</p></div>
+          </div>
+          <div class="tags" style="margin-top:18px"><span class="tag">活动报名</span><span class="tag">场地互助</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 功能 -->
+  <section class="section" style="background:var(--green-50)">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">功能清单</span>
+          <h2 class="h2">上线后你会看到什么</h2>
+          <p>先做最常用的四件事，其它的边用边加。</p>
+        </div>
+      </div>
+
+      <div class="grid g4">
+        <div class="card card-pad-sm reveal">
+          <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+          <h3 class="h3">活动报名</h3>
+          <p style="font-size:13.5px">每周活动直接接龙，人数与水平一目了然。</p>
+        </div>
+        <div class="card card-pad-sm reveal d1">
+          <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 12h18M12 3v18"/></svg></div>
+          <h3 class="h3">场地互助</h3>
+          <p style="font-size:13.5px">谁抢到了、哪个时段还缺人，在群里刷屏不如在这里看。</p>
+        </div>
+        <div class="card card-pad-sm reveal d2">
+          <div class="card-ico lime"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/></svg></div>
+          <h3 class="h3">积分与战报</h3>
+          <p style="font-size:13.5px">内部赛成绩、积分排名与赛后回顾。</p>
+        </div>
+        <div class="card card-pad-sm reveal d3">
+          <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
+          <h3 class="h3">临时通知</h3>
+          <p style="font-size:13.5px">天气、场地变更、集合地点，发一次全员可见。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 管理员：怎么放小程序码 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="grid g2" style="align-items:start">
+        <div class="reveal">
+          <span class="kicker">给维护者</span>
+          <h2 class="h2" style="margin-top:12px">怎么把占位换成真的小程序码</h2>
+          <p class="lead" style="margin-top:12px">小程序码拿到后（微信公众平台 → 设置 → 基本设置 → 小程序码下载），把图片放进 assets/img/，替换这一处即可。</p>
+          <div class="steps" style="margin-top:26px">
+            <div class="step">
+              <span class="step-n">01</span>
+              <div><h3>下载小程序码</h3><p>在微信公众平台的「小程序码」页面下载，建议选 430×430 或更大的 PNG。</p></div>
+            </div>
+            <div class="step">
+              <span class="step-n">02</span>
+              <div><h3>放进 assets/img/</h3><p>命名成 <b>miniapp-qr.png</b>，不要用中文名，避免某些服务器编码出错。</p></div>
+            </div>
+            <div class="step">
+              <span class="step-n">03</span>
+              <div><h3>替换本页图片</h3><p>把 <b>qr-frame</b> 里的占位 img 换掉，同时删掉「此处放置小程序码」那行提示。</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal d1">
+          <h3 class="h3">替换用的代码片段</h3>
+          <p style="margin-top:6px">原先是：</p>
+          <pre style="margin:10px 0 0; padding:14px 16px; background:var(--green-950); color:#d8f5c6; border-radius:12px; font-size:12.5px; line-height:1.7; overflow-x:auto"><code>&lt;img class="qr-art" src="assets/img/qr-art.svg"
+     alt="小程序码占位图"&gt;
+&lt;div class="qr-tip"&gt;此处放置俱乐部小程序码&lt;/div&gt;</code></pre>
+          <p style="margin-top:16px">替换成：</p>
+          <pre style="margin:10px 0 0; padding:14px 16px; background:var(--green-950); color:#d8f5c6; border-radius:12px; font-size:12.5px; line-height:1.7; overflow-x:auto"><code>&lt;img class="qr-art" src="assets/img/miniapp-qr.png"
+     alt="广财羽动未来小程序码"&gt;</code></pre>
+          <div class="callout warn" style="margin-top:18px">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>
+            <div><h4>小程序码不能长期用截图</h4><p>要用后台导出的正式码，截图会失真，微信可能识别不出来。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 备用 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div class="cta-inner">
+          <div>
+            <span class="kicker" style="color:var(--lime)">备用入口</span>
+            <h2 style="margin-top:12px">小程序还在路上，群已经开了</h2>
+            <p>想打球不用等上线。加 QQ 群，看本周活动、借拍、约对拉，都有人接。</p>
+            <div class="actions">
+              <a class="btn btn-lime" href="index.html#join">看入会流程</a>
+              <a class="btn btn-ghost" href="resources.html">先取资源</a>
+            </div>
+          </div>
+          <div class="qq-card">
+            <span class="lbl">Club QQ</span>
+            <span class="qq-num">2981516286</span>
+            <button class="btn btn-ghost btn-sm" type="button" data-copy="2981516286" style="width:100%">复制 QQ 号</button>
+            <p style="font-size:12px; color:rgba(255,255,255,.6); margin-top:12px">备注「羽毛球 + 学院 + 姓名」，通过更快。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#0d6338"/>
+          <path d="M25.4 44.6 17.2 18.9Q32 13.4 46.8 18.9L38.6 44.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M32 42.8V16.2" stroke="#c9f26d" stroke-width="1.6" opacity=".85"/>
+          <ellipse cx="32" cy="47" rx="6.4" ry="5" fill="#c9f26d"/>
+        </svg>
+        <span class="brand-text"><b>羽动未来</b><em>GDUFE Badminton</em></span>
+      </a>
+      <p>广东财经大学羽毛球爱好者组织。以球会友，把想打球变成打成球。</p>
+    </div>
+    <div class="foot-col">
+      <h4>浏览</h4>
+      <ul>
+        <li><a href="members.html">组织成员名单</a></li>
+        <li><a href="history.html">俱乐部历史</a></li>
+        <li><a href="recommend.html">俱乐部推荐</a></li>
+        <li><a href="resources.html">资源库</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>入口</h4>
+      <ul>
+        <li><a href="gdufe.html">广财官网</a></li>
+        <li><a href="miniprogram.html">微信小程序</a></li>
+        <li><a href="https://www.gdufe.edu.cn/" target="_blank" rel="noopener">学校主页 ↗</a></li>
+        <li><a href="https://tyb.gdufe.edu.cn/" target="_blank" rel="noopener">体育学院 ↗</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>联系</h4>
+      <ul>
+        <li><a href="miniprogram.html">QQ 群：2981516286</a></li>
+        <li><a href="resources.html#booking">场地预约指南</a></li>
+        <li><span class="muted">广州校区 · 羽毛球馆</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>© <span data-year>2026</span> 广东财经大学羽动未来俱乐部 · 学生自建页面，非学校官方站点</p>
+    <p>内容更新：2026 年 11 月 · 页面问题请联系俱乐部宣传组</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="返回顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

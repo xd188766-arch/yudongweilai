@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>资源库 · 广财羽动未来俱乐部</title>
+<meta name="description" content="广财羽动未来俱乐部资源库：场馆预约流程、羽毛球规则速查、每周训练计划模板，以及可下载的训练打卡表与装备清单。">
+<meta name="theme-color" content="#0d6338">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- SEO:START -->
+<link rel="canonical" href="https://xd188766-arch.github.io/yudongweilai/resources.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="广财羽动未来俱乐部">
+<meta property="og:title" content="资源库 · 广财羽动未来俱乐部">
+<meta property="og:description" content="广财羽动未来俱乐部资源库：场馆预约流程、羽毛球规则速查、每周训练计划模板，以及可下载的训练打卡表与装备清单。">
+<meta property="og:url" content="https://xd188766-arch.github.io/yudongweilai/resources.html">
+<meta property="og:image" content="https://xd188766-arch.github.io/yudongweilai/assets/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="资源库 · 广财羽动未来俱乐部">
+<meta name="twitter:description" content="广财羽动未来俱乐部资源库：场馆预约流程、羽毛球规则速查、每周训练计划模板，以及可下载的训练打卡表与装备清单。">
+<meta name="twitter:image" content="https://xd188766-arch.github.io/yudongweilai/assets/img/og-cover.png">
+<meta name="author" content="广财羽动未来俱乐部">
+<!-- SEO:END -->
+</head>
+<body>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html" aria-label="广财羽动未来俱乐部首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#0d6338"/>
+        <path d="M25.4 44.6 17.2 18.9Q32 13.4 46.8 18.9L38.6 44.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M32 42.8V16.2" stroke="#c9f26d" stroke-width="1.6" opacity=".85"/>
+        <path d="M27.6 43.8 22.6 17.6M36.4 43.8l5-26.2" stroke="#c9f26d" stroke-width="1.3" opacity=".6"/>
+        <ellipse cx="32" cy="47" rx="6.4" ry="5" fill="#c9f26d"/>
+      </svg>
+      <span class="brand-text"><b>羽动未来</b><em>GDUFE Badminton</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="members.html">组织成员</a>
+      <a href="history.html">俱乐部历史</a>
+      <a href="recommend.html">俱乐部推荐</a>
+      <a href="resources.html" class="on">资源</a>
+      <a href="gdufe.html">广财官网</a>
+      <a href="miniprogram.html" class="nav-cta">小程序</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <div class="crumb"><a href="index.html">首页</a><span>/</span>资源库</div>
+      <span class="kicker">Resources</span>
+      <h1 class="h1">资源库</h1>
+      <p class="lead">预约怎么走、规则怎么判、训练怎么排、装备怎么买。都是能直接用上的东西，不用在群里反复问。</p>
+    </div>
+  </section>
+
+  <!-- 资源检索 -->
+  <section class="section" style="padding-top:clamp(30px,4vw,46px)">
+    <div class="wrap">
+      <div class="filter-bar reveal">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button class="filter-btn" type="button" data-filter="guide" aria-pressed="false">流程指南</button>
+        <button class="filter-btn" type="button" data-filter="rule" aria-pressed="false">规则</button>
+        <button class="filter-btn" type="button" data-filter="plan" aria-pressed="false">训练计划</button>
+        <button class="filter-btn" type="button" data-filter="download" aria-pressed="false">可下载</button>
+        <button class="filter-btn" type="button" data-filter="link" aria-pressed="false">外部链接</button>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="searchInput" type="search" placeholder="搜索资源，如「发球」「打卡表」" aria-label="搜索资源">
+        </div>
+      </div>
+
+      <div class="grid g3">
+
+        <a class="card hover res-card reveal" href="#booking" data-cat="guide">
+          <span class="res-type">指南</span>
+          <h2 class="h3" style="margin-top:12px">场馆预约四步流程</h2>
+          <p>登录、选日期、选场地、提交。每一步的注意点都写清楚了。</p>
+          <div class="res-meta"><span>3 分钟读完</span><span>更新于 2026-11</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d1" href="#rules" data-cat="rule">
+          <span class="res-type">规则</span>
+          <h2 class="h3" style="margin-top:12px">羽毛球规则速查</h2>
+          <p>21 分制、发球、换边、双打轮转与常见违例，一页看完。</p>
+          <div class="res-meta"><span>速查表</span><span>适合临场查</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d2" href="#plan" data-cat="plan">
+          <span class="res-type">计划</span>
+          <h2 class="h3" style="margin-top:12px">每周训练计划模板</h2>
+          <p>技术、体能、实战三练的分配，附每节课的内容建议。</p>
+          <div class="res-meta"><span>可照抄</span><span>适合个人 / 部门</span></div>
+        </a>
+
+        <a class="card hover res-card reveal" href="资源/训练打卡表.csv" download data-cat="download">
+          <span class="res-type dl">下载 · CSV</span>
+          <h2 class="h3" style="margin-top:12px">训练打卡表</h2>
+          <p>按日期记录训练内容、时长与完成度，坚持 8 周再回头看。</p>
+          <div class="res-meta"><span>Excel 可直接打开</span><span>8 周模板</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d1" href="资源/装备清单.md" download data-cat="download">
+          <span class="res-type dl">下载 · Markdown</span>
+          <h2 class="h3" style="margin-top:12px">新手装备清单</h2>
+          <p>按优先级排列的购买清单，标了「必买 / 可等等」。</p>
+          <div class="res-meta"><span>含预算档位</span><span>手机可看</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d2" href="资源/场馆预约速查.md" download data-cat="download guide">
+          <span class="res-type dl">下载 · Markdown</span>
+          <h2 class="h3" style="margin-top:12px">场馆预约速查卡</h2>
+          <p>放场时间、额度、失败原因对照表，存在手机里随时看。</p>
+          <div class="res-meta"><span>一页</span><span>离线可用</span></div>
+        </a>
+
+        <a class="card hover res-card reveal" href="资源/入会登记表.csv" download data-cat="download">
+          <span class="res-type dl">下载 · CSV</span>
+          <h2 class="h3" style="margin-top:12px">入会登记表</h2>
+          <p>招新时用的登记模板，含水平自评与意向部门。</p>
+          <div class="res-meta"><span>可直接打印</span><span>招新用</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d1" href="recommend.html#newbie" data-cat="plan">
+          <span class="res-type">计划</span>
+          <h2 class="h3" style="margin-top:12px">新手 90 天路线</h2>
+          <p>从握拍到能打完整局，按三阶段拆好的学习路径。</p>
+          <div class="res-meta"><span>站内页面</span><span>附验收标准</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d2" href="gdufe.html" data-cat="link">
+          <span class="res-type link">站内入口</span>
+          <h2 class="h3" style="margin-top:12px">广东财经大学官网入口</h2>
+          <p>学校主页、教务处、图书馆、体育学院等官方链接合集。</p>
+          <div class="res-meta"><span>官方来源</span><span>含校区地址</span></div>
+        </a>
+
+        <a class="card hover res-card reveal" href="https://bwfbadminton.com/" target="_blank" rel="noopener" data-cat="link">
+          <span class="res-type link">外部链接</span>
+          <h2 class="h3" style="margin-top:12px">世界羽联 BWF 官网</h2>
+          <p>赛事日程、选手资料、比赛回放。看职业比赛学技术从这里开始。</p>
+          <div class="res-meta"><span>英文站</span><span>官方</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d1" href="https://tyb.gdufe.edu.cn/" target="_blank" rel="noopener" data-cat="link">
+          <span class="res-type link">外部链接</span>
+          <h2 class="h3" style="margin-top:12px">广财体育学院</h2>
+          <p>校内体育课程、场馆与体育活动的官方信息来源。</p>
+          <div class="res-meta"><span>校内官网</span><span>课程 / 场馆</span></div>
+        </a>
+
+        <a class="card hover res-card reveal d2" href="miniprogram.html" data-cat="link">
+          <span class="res-type link">站内入口</span>
+          <h2 class="h3" style="margin-top:12px">俱乐部微信小程序</h2>
+          <p>活动报名、场地互助、通知与战报，小程序码与使用指引。</p>
+          <div class="res-meta"><span>入口页</span><span>微信内打开</span></div>
+        </a>
+
+      </div>
+
+      <div class="empty-state" id="emptyState">没有匹配的资源。试试「预约」「规则」「训练」这些关键词。</div>
+    </div>
+  </section>
+
+  <!-- 预约流程 -->
+  <section class="section" id="booking" style="background:var(--green-50)">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Guide / 01</span>
+          <h2 class="h2">场馆预约四步流程</h2>
+          <p>学校场馆走的是统一预约系统。流程不长，但每一步都有坑。</p>
+        </div>
+        <span class="sec-num">Booking</span>
+      </div>
+
+      <div class="grid g2" style="align-items:start">
+        <div class="steps reveal">
+          <div class="step">
+            <span class="step-n">01</span>
+            <div>
+              <h3>先登录，别等到 12:00</h3>
+              <p>用学校统一身份认证登录预约系统。建议提前 5 分钟打开页面并确认仍处于登录状态——登录过期是抢场失败最常见的原因。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-n">02</span>
+            <div>
+              <h3>选日期：目标日期是「今天 +2」</h3>
+              <p>系统里通常给出三格：今天、今天 +1、今天 +2。12:00 之前那一格是灰的，12:00 一到才开放。想打周五，就周三中午去约。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-n">03</span>
+            <div>
+              <h3>挑场地与时段</h3>
+              <p>可约的场地会显示为可选；已被预订、教学训练或工会占用的场地会直接不可选。同一时段只能约 1 块场地。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-n">04</span>
+            <div>
+              <h3>提交并确认</h3>
+              <p>提交后回到「我的预约」确认订单生效。截图保存时段与场地号，活动当天按此集合。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal d1" style="background:#fff">
+          <h3 class="h3">四条硬规则</h3>
+          <div class="table-scroll" style="margin-top:16px; border:none; box-shadow:none">
+            <table style="min-width:0">
+              <tbody>
+                <tr><td style="width:120px"><b>放场时间</b></td><td>每天 12:00 放出两天后的场次</td></tr>
+                <tr><td><b>每日额度</b></td><td>每人每天最多 2 场</td></tr>
+                <tr><td><b>每周额度</b></td><td>每人每周最多 4 场</td></tr>
+                <tr><td><b>时段冲突</b></td><td>同一时段只能预约 1 块场地</td></tr>
+                <tr><td><b>场地占用</b></td><td>教学训练、工会占用的场地自动跳过</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout warn" style="margin-top:18px">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>
+            <div>
+              <h4>取消是否返还额度，尚未确认</h4>
+              <p>所以别「先占着再说」。占而不用既挤掉别人，也可能让自己这周的额度被吃掉。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-top:24px">
+        <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg></span>
+        <div>
+          <h4>失败了先查这三件事</h4>
+          <p>①登录状态是否过期；②目标日期是否真的是「今天 +2」；③所选时段是否被教学或工会占用。这三条能解释绝大多数「明明有场却约不上」。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 规则速查 -->
+  <section class="section" id="rules">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Guide / 02</span>
+          <h2 class="h2">羽毛球规则速查</h2>
+          <p>临场最常被问到的十一条。打比赛前扫一眼，能省下很多争执。</p>
+        </div>
+        <span class="sec-num">Rules</span>
+      </div>
+
+      <div class="table-scroll reveal t-two">
+        <table>
+          <thead>
+            <tr><th style="width:150px">项目</th><th>规则要点</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><b>计分</b></td><td>每球得分制，先到 21 分且领先 2 分者胜该局；20 平后需净胜 2 分，29 平后先到 30 分者胜。</td></tr>
+            <tr><td><b>局数</b></td><td>三局两胜。赢两局即结束，不需要打第三局。</td></tr>
+            <tr><td><b>发球</b></td><td>发球员击球瞬间，整个球应低于 1.15 米；发球时双脚不得踩线或离地移动，球拍需连续向前挥动。</td></tr>
+            <tr><td><b>发球权</b></td><td>只有发球方得分才得 1 分；接发球方赢下这一分，则获得发球权。</td></tr>
+            <tr><td><b>换边</b></td><td>每局结束后交换场地；决胜局一方先到 11 分时交换场地。</td></tr>
+            <tr><td><b>间歇</b></td><td>一方先到 11 分时有不超过 60 秒的技术暂停；局间休息不超过 120 秒。</td></tr>
+            <tr><td><b>双打轮转</b></td><td>发球方得分后，同一个人继续发球但换到另一发球区；接发球方不得换位。只有发球方得分才轮转位置。</td></tr>
+            <tr><td><b>触网</b></td><td>比赛中球拍、身体或衣物触网或网柱，均为违例。</td></tr>
+            <tr><td><b>过网击球</b></td><td>不得在对方场区击球。随球过网（击球后球拍顺势越过网面）不算违例。</td></tr>
+            <tr><td><b>连击</b></td><td>同一方不得连续击球两次。一次挥拍中球在拍面与拍框间短暂接触，不判连击。</td></tr>
+            <tr><td><b>界内外</b></td><td>球托落地压线即为界内。判断以球托落点为准，不看羽毛。</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="small" style="margin-top:14px">
+        说明：以上为俱乐部内部速查，用于日常约球与内部赛。正式比赛以世界羽联（BWF）最新竞赛规则为准。
+        <a href="https://bwfbadminton.com/" target="_blank" rel="noopener" style="color:var(--green-700); font-weight:600">BWF 官网 ↗</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 训练计划 -->
+  <section class="section" id="plan" style="background:var(--green-50)">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Guide / 03</span>
+          <h2 class="h2">每周三练模板</h2>
+          <p>照着排就行。练两次也比不练强，但别把三次全排成实战。</p>
+        </div>
+        <a class="btn btn-ghost btn-sm" href="资源/训练打卡表.csv" download>下载打卡表</a>
+      </div>
+
+      <div class="table-scroll reveal">
+        <table>
+          <thead>
+            <tr><th style="width:100px">课次</th><th style="width:110px">类型</th><th>内容</th><th style="width:90px">时长</th><th style="width:110px">强度</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>第一次</b></td><td>技术</td>
+              <td>多球：正手高远球、挑球、放网；固定球路对拉。重点在击球点与动作完整性。</td>
+              <td class="num">70 分钟</td><td>中</td>
+            </tr>
+            <tr>
+              <td><b>第二次</b></td><td>体能</td>
+              <td>四点步伐（每组 30 秒 × 6 组）、跳绳（3 组 × 2 分钟）、核心（平板支撑 + 侧支撑）。</td>
+              <td class="num">45 分钟</td><td>高</td>
+            </tr>
+            <tr>
+              <td><b>第三次</b></td><td>实战</td>
+              <td>双打轮转练习，打 2–3 局 21 分；每局后复盘一次站位与失误类型。</td>
+              <td class="num">90 分钟</td><td>高</td>
+            </tr>
+            <tr>
+              <td><b>可选</b></td><td>恢复</td>
+              <td>拉伸、肩袖与踝关节活动度、泡沫轴放松。别省这一步。</td>
+              <td class="num">20 分钟</td><td>低</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="scroll-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12H3m0 0 3-3m-3 3 3 3"/><path d="M16 12h5m0 0-3-3m3 3-3 3"/></svg>表格较宽，左右滑动查看完整内容</p>
+
+      <div class="grid g2" style="margin-top:24px">
+        <div class="card reveal">
+          <h3 class="h3">排计划的三个原则</h3>
+          <ul class="feature-list">
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><div><b>技术练在体力好的时候</b>，体能放在技术之后，别反过来。</div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><div><b>一次只重点改一个动作</b>，同时改三个等于没改。</div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><div><b>打完就记</b>，记下今天哪里不顺，下次练之前先看一遍。</div></li>
+          </ul>
+        </div>
+        <div class="card reveal d1" style="background:linear-gradient(160deg,#fff,var(--green-100)); border-color:var(--green-300)">
+          <h3 class="h3">给自己定个 8 周目标</h3>
+          <p style="margin-top:6px">比「多练练」更具体的目标，例如：</p>
+          <ul class="feature-list">
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><div>连续对拉 30 拍不失误</div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><div>四点步伐一组不减速</div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><div>双打局里主动失误减少一半</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下载 -->
+  <section class="section" id="downloads">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Guide / 04</span>
+          <h2 class="h2">可下载的文件</h2>
+          <p>全部是纯文本格式，Excel、WPS、任何编辑器都能打开，不会过期。</p>
+        </div>
+        <span class="sec-num">Downloads</span>
+      </div>
+
+      <div class="grid g2">
+        <a class="link-card reveal" href="资源/训练打卡表.csv" download>
+          <span class="link-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+          <span class="link-body"><b>训练打卡表.csv</b><span>8 周训练记录模板，含完成度评分</span><em>CSV · 可直接导入 Excel</em></span>
+          <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+
+        <a class="link-card reveal d1" href="资源/装备清单.md" download>
+          <span class="link-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 20 4M14 4h6v6"/><path d="M4 4l7 7"/></svg></span>
+          <span class="link-body"><b>装备清单.md</b><span>按优先级排序的新手购买清单</span><em>Markdown · 手机可读</em></span>
+          <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+
+        <a class="link-card reveal" href="资源/场馆预约速查.md" download>
+          <span class="link-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></span>
+          <span class="link-body"><b>场馆预约速查.md</b><span>放场规律、额度、失败原因对照</span><em>Markdown · 一页速查</em></span>
+          <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+
+        <a class="link-card reveal d1" href="资源/入会登记表.csv" download>
+          <span class="link-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+          <span class="link-body"><b>入会登记表.csv</b><span>招新登记模板，含水平自评与意向部门</span><em>CSV · 可直接打印</em></span>
+          <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+      </div>
+
+      <p class="small" style="margin-top:16px">CSV 用 Excel 打开若出现乱码，请选择「数据 → 从文本/CSV」并指定 UTF-8 编码。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#0d6338"/>
+          <path d="M25.4 44.6 17.2 18.9Q32 13.4 46.8 18.9L38.6 44.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M32 42.8V16.2" stroke="#c9f26d" stroke-width="1.6" opacity=".85"/>
+          <ellipse cx="32" cy="47" rx="6.4" ry="5" fill="#c9f26d"/>
+        </svg>
+        <span class="brand-text"><b>羽动未来</b><em>GDUFE Badminton</em></span>
+      </a>
+      <p>广东财经大学羽毛球爱好者组织。以球会友，把想打球变成打成球。</p>
+    </div>
+    <div class="foot-col">
+      <h4>浏览</h4>
+      <ul>
+        <li><a href="members.html">组织成员名单</a></li>
+        <li><a href="history.html">俱乐部历史</a></li>
+        <li><a href="recommend.html">俱乐部推荐</a></li>
+        <li><a href="resources.html">资源库</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>入口</h4>
+      <ul>
+        <li><a href="gdufe.html">广财官网</a></li>
+        <li><a href="miniprogram.html">微信小程序</a></li>
+        <li><a href="https://www.gdufe.edu.cn/" target="_blank" rel="noopener">学校主页 ↗</a></li>
+        <li><a href="https://tyb.gdufe.edu.cn/" target="_blank" rel="noopener">体育学院 ↗</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>联系</h4>
+      <ul>
+        <li><a href="miniprogram.html">QQ 群：2981516286</a></li>
+        <li><a href="resources.html#booking">场地预约指南</a></li>
+        <li><span class="muted">广州校区 · 羽毛球馆</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>© <span data-year>2026</span> 广东财经大学羽动未来俱乐部 · 学生自建页面，非学校官方站点</p>
+    <p>内容更新：2026 年 11 月 · 页面问题请联系俱乐部宣传组</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="返回顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
