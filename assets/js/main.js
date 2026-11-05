@@ -198,4 +198,17 @@
 
   /* ---------- 8. 页脚年份 ---------- */
   $$('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+  /* ---------- 9. iOS 卡片：点击展开「联系群主」说明 ---------- */
+  var iosCard = $('#iosCard');
+  var iosNotice = $('#iosNotice');
+  if (iosCard && iosNotice) {
+    iosCard.addEventListener('click', function () {
+      iosNotice.hidden = false;
+      iosCard.setAttribute('aria-expanded', 'true');
+      if (iosNotice.scrollIntoView) {
+        iosNotice.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      }
+    });
+  }
 })();

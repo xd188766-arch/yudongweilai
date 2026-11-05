@@ -91,12 +91,13 @@
           <div class="res-meta"><span>约 0.1 MB</span><span>Android 7+</span></div>
         </a>
 
-        <a class="card hover res-card reveal d1" href="资源/书签-安装-精简.txt" download>
-          <span class="res-type dl">下载 · 书签脚本</span>
+        <button class="card hover res-card reveal d1" type="button" id="iosCard"
+                style="text-align:left; cursor:pointer; font:inherit; color:inherit">
+          <span class="res-type" style="background:var(--amber-bg); color:var(--amber)">联系群主</span>
           <h3 class="h3" style="margin-top:12px">iPhone / iPad</h3>
-          <p>iOS 用 Safari 书签脚本，不用装 App。按下面的四步加到书签，在学校场馆页运行。</p>
-          <div class="res-meta"><span>约 17 KB</span><span>Safari</span></div>
-        </a>
+          <p>iOS 版不公开下载。点这里看怎么获取。</p>
+          <div class="res-meta"><span>需联系群主</span><span>Safari</span></div>
+        </button>
 
         <a class="card hover res-card reveal d2" href="资源/广财羽动未来-电脑端.zip" download>
           <span class="res-type dl">下载 · ZIP</span>
@@ -106,18 +107,27 @@
         </a>
       </div>
 
+      <div class="callout warn reveal" id="iosNotice" hidden style="margin-top:18px">
+        <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg></span>
+        <div>
+          <h4>iOS 版需要联系群主</h4>
+          <p>苹果不允许直接安装第三方安装包，所以要按你的机型和系统版本单独配。加 QQ <b>2981516286</b> 说明一下就有人给你发，不收费。</p>
+          <button class="btn btn-ghost btn-sm" type="button" data-copy="2981516286" style="margin-top:12px">复制 QQ 号</button>
+        </div>
+      </div>
+
       <div class="grid g2" style="margin-top:24px">
         <article class="card reveal">
-          <h3 class="h3">iPhone 怎么装（书签法）</h3>
-          <ol style="margin-top:16px; display:grid; gap:13px">
-            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">1.</b><span>下载上面的<b>书签脚本</b>，用「文件」打开，全选复制</span></li>
-            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">2.</b><span>Safari 里随便打开一个网页，点<b>分享 → 添加书签</b>，名字写「抢场」</span></li>
-            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">3.</b><span>到<b>书签 → 编辑</b>，把这条书签的网址整段换成复制的脚本</span></li>
-            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">4.</b><span>打开学校场馆页 <b>tyy.gdufe.edu.cn</b> 并登录，点书签「抢场」就会弹出面板</span></li>
+          <h3 class="h3">iPhone 怎么用</h3>
+          <p style="margin-top:10px; font-size:14.5px; color:var(--muted)">iOS 不能直接装安装包，需要群主帮你配。流程很简单：</p>
+          <ol style="margin-top:14px; display:grid; gap:13px">
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">1.</b><span>加 QQ <b>2981516286</b>，说明你的机型和系统版本</span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">2.</b><span>群主把适配方案（Safari 书签或网页版）发你</span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">3.</b><span>在 Safari 打开学校场馆页并登录，按群主说的操作</span></li>
           </ol>
           <div class="callout warn" style="margin-top:16px">
             <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg></span>
-            <div><h4>必须先在网页里登录</h4><p>脚本只是帮你点得快，登录态还是你本人的。脚本不会保存也不会发送你的账号密码。</p></div>
+            <div><h4>为什么不能直接下载</h4><p>苹果不允许安装第三方安装包，工具又依赖你本机的 Safari 登录态，所以只能一对一配置，不公开传。</p></div>
           </div>
         </article>
 
