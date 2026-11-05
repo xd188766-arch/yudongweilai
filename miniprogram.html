@@ -2,11 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>微信小程序 · 广财羽动未来俱乐部</title>
 <meta name="description" content="广财羽动未来俱乐部微信小程序入口：活动报名、场地互助、战报与通知。含小程序码位置与使用指引。">
 <meta name="theme-color" content="#0d6338">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 <!-- SEO:START -->
 <link rel="canonical" href="https://xd188766-arch.github.io/yudongweilai/miniprogram.html">
@@ -25,19 +26,22 @@
 <meta name="twitter:image" content="https://xd188766-arch.github.io/yudongweilai/assets/img/og-cover.png">
 <meta name="author" content="广财羽动未来俱乐部">
 <!-- SEO:END -->
+<!-- PWA:START -->
+<link rel="manifest" href="manifest.webmanifest">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="广财羽动未来">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!-- PWA:END -->
 </head>
 <body>
 
 <header class="site-head" id="siteHead">
   <div class="wrap head-inner">
     <a class="brand" href="index.html" aria-label="广财羽动未来俱乐部首页">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <rect width="64" height="64" rx="16" fill="#0d6338"/>
-        <path d="M25.4 44.6 17.2 18.9Q32 13.4 46.8 18.9L38.6 44.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-        <path d="M32 42.8V16.2" stroke="#c9f26d" stroke-width="1.6" opacity=".85"/>
-        <path d="M27.6 43.8 22.6 17.6M36.4 43.8l5-26.2" stroke="#c9f26d" stroke-width="1.3" opacity=".6"/>
-        <ellipse cx="32" cy="47" rx="6.4" ry="5" fill="#c9f26d"/>
-      </svg>
+      <img class="brand-mark" src="assets/img/brand-mark.png" alt="" width="38" height="38" loading="eager" decoding="async">
       <span class="brand-text"><b>羽动未来</b><em>GDUFE Badminton</em></span>
     </a>
     <nav class="nav" id="nav" aria-label="主导航">
@@ -212,6 +216,61 @@
     </div>
   </section>
 
+  <!-- 添加到主屏幕 -->
+  <section class="section" id="install">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">手机安装</span>
+          <h2 class="h2">把官网放到手机桌面上</h2>
+          <p>不用下载 App，加一次图标就行。以后点开是全屏的，没有地址栏，和 App 一样。</p>
+        </div>
+        <span class="sec-num">Add to Home</span>
+      </div>
+
+      <div class="grid g2">
+        <article class="card hover reveal">
+          <div class="card-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          </div>
+          <h3 class="h3">iPhone / iPad</h3>
+          <ol style="margin-top:16px; display:grid; gap:13px">
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">1.</b><span>用 <b>Safari</b> 打开 <span style="word-break:break-all">xd188766-arch.github.io/yudongweilai</span></span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">2.</b><span>点屏幕底部中间的 <b>分享</b> 按钮（方框带向上箭头）</span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">3.</b><span>在列表里往下滑，找到 <b>「添加到主屏幕」</b></span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">4.</b><span>右上角点 <b>「添加」</b>，桌面就多一个「广财羽动未来」图标</span></li>
+          </ol>
+          <div class="callout warn" style="margin-top:16px">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg></span>
+            <div>
+              <h4>微信里打不开这个功能</h4>
+              <p>微信内置浏览器不支持「添加到主屏幕」。在微信里点右上角「⋯」→ <b>在 Safari 中打开</b>，再按上面四步操作。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card hover reveal d1">
+          <div class="card-ico lime">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 5h6"/><circle cx="12" cy="18" r="1"/></svg>
+          </div>
+          <h3 class="h3">Android</h3>
+          <ol style="margin-top:16px; display:grid; gap:13px">
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">1.</b><span>用 <b>Chrome</b> 或系统浏览器打开同一个网址</span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">2.</b><span>点右上角 <b>⋮</b> 菜单</span></li>
+            <li style="display:flex; gap:12px; font-size:14.5px"><b style="color:var(--green-600)">3.</b><span>选 <b>「添加到主屏幕」</b>（部分机型叫「安装应用」）</span></li>
+          </ol>
+          <div class="callout" style="margin-top:16px">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span>
+            <div>
+              <h4>图标长什么样</h4>
+              <p>深蓝底、白色飘带与羽毛球，是俱乐部现在的标志。点开后是全屏页面，顶部没有浏览器地址栏，用起来和小程序一样。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- 备用 -->
   <section class="section">
     <div class="wrap">
@@ -243,12 +302,7 @@
   <div class="wrap foot-grid">
     <div class="foot-brand">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="16" fill="#0d6338"/>
-          <path d="M25.4 44.6 17.2 18.9Q32 13.4 46.8 18.9L38.6 44.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-          <path d="M32 42.8V16.2" stroke="#c9f26d" stroke-width="1.6" opacity=".85"/>
-          <ellipse cx="32" cy="47" rx="6.4" ry="5" fill="#c9f26d"/>
-        </svg>
+        <img class="brand-mark" src="assets/img/brand-mark.png" alt="" width="38" height="38" loading="eager" decoding="async">
         <span class="brand-text"><b>羽动未来</b><em>GDUFE Badminton</em></span>
       </a>
       <p>广东财经大学羽毛球爱好者组织。以球会友，把想打球变成打成球。</p>
