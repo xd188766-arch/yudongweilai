@@ -9,8 +9,7 @@
 ├── index.html            首页（Hero、放场倒计时、活动节奏、推荐/资源预览）
 ├── members.html          组织成员名单（架构图 + 职位卡片 + 名单总表）
 ├── history.html          俱乐部历史（时间线 + 三阶段 + 照片墙占位）
-├── recommend.html        俱乐部推荐（可筛选、可搜索）
-├── resources.html        资源库（预约流程、规则速查、训练模板、下载）
+├── recommend.html        俱乐部推荐（卖球 + 穿线价目）
 ├── gdufe.html            广东财经大学官网入口（官方链接合集）
 ├── miniprogram.html      微信小程序（小程序码位置 + 使用指引）
 ├── 404.html              404 页面
