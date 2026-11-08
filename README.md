@@ -92,6 +92,7 @@
 - **响应式**：1200 / 980 / 720 / 420 四档断点，手机端折叠导航
 - **无障碍**：键盘可操作、`aria-expanded`、支持 `prefers-reduced-motion`
 - **无需联网**：图形都是内联 SVG 或 CSS
+- **图片**：大图都生成了 WebP（`assets/img/*.webp`），HTML 用 `<picture>` 优先加载 WebP、旧浏览器回退 JPG/PNG；二维码图片 `loading="eager"` + `fetchpriority="high"`，`activity-other.html` / `join.html` 还在 `<head>` 里 preload，进页面就能看到码，不用等滚动
 
 ## 六、免责说明
 

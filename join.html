@@ -35,6 +35,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <!-- PWA:END -->
+<link rel="preload" as="image" type="image/webp" href="assets/img/wechat-group-qr.webp">
 </head>
 <body>
 
@@ -82,7 +83,7 @@
         <div class="join-grid">
           <div class="join-card">
             <span class="lbl">微信群</span>
-            <img src="assets/img/wechat-group-qr.png" alt="羽动未来俱乐部微信群二维码" width="640" height="640" loading="lazy" decoding="async">
+            <picture><source srcset="assets/img/wechat-group-qr.webp" type="image/webp"><img src="assets/img/wechat-group-qr.png" alt="羽动未来俱乐部微信群二维码" width="640" height="640" loading="eager" decoding="async" fetchpriority="high"></picture>
             <p>扫码进群 · 二维码 7 天更新</p>
           </div>
           <div class="join-card">
