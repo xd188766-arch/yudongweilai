@@ -199,7 +199,38 @@
   /* ---------- 8. 页脚年份 ---------- */
   $$('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
-  /* ---------- 9. iOS 卡片：点击展开「联系群主」说明 ---------- */
+  /* ---------- 9. 首页板块目录联动 ---------- */
+  if (document.body.classList.contains('page-home')) {
+    var menuFor = {
+      home: 'home', venue: 'home', alumni: 'alumni', campus: 'campus',
+      matches: 'matches', league: 'league', club: 'club', join: 'join'
+    };
+    var menuLinks = $$('.section-bar a, .nav a');
+    var setMenu = function (id) {
+      menuLinks.forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        var hash = href.indexOf('#') >= 0 ? href.split('#')[1] : '';
+        if (!hash) return;
+        a.classList.toggle('on', hash === id);
+      });
+    };
+    var secs = $$('main section[id]');
+    if (secs.length) {
+      var markMenu = function () {
+        var line = window.innerHeight * 0.34;
+        var current = 'home';
+        secs.forEach(function (s) {
+          if (s.getBoundingClientRect().top <= line) current = s.id;
+        });
+        setMenu(menuFor[current] || current);
+      };
+      window.addEventListener('scroll', markMenu, { passive: true });
+      window.addEventListener('resize', markMenu);
+      markMenu();
+    }
+  }
+
+  /* ---------- 10. iOS 卡片：点击展开「联系群主」说明 ---------- */
   var iosCard = $('#iosCard');
   var iosNotice = $('#iosNotice');
   if (iosCard && iosNotice) {

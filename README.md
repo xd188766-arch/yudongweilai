@@ -1,14 +1,15 @@
-# 广财羽动未来俱乐部 · 官网
+# 广东财经大学校友会羽毛球俱乐部 · 官网
 
-广东财经大学羽动未来俱乐部的静态官网。纯 HTML + CSS + JS，**没有构建步骤、没有外部依赖**，双击即可预览，丢到任何静态托管上即可上线。
+广东财经大学校友会羽毛球俱乐部的静态官网。纯 HTML + CSS + JS，**没有构建步骤、没有外部依赖**，双击即可预览，丢到任何静态托管上即可上线。
 
 ## 一、目录结构
 
 ```
 羽动未来官网/
-├── index.html            首页（Hero、放场倒计时、活动节奏、推荐/资源预览）
+├── index.html            首页（横幅板块目录 + 校友会活动 / 校内活动两个大方块 + 场馆照片 + 比赛 + 俱乐部 + 加入我们）
+├── activity.html         校内活动详情（三场活动 + 本周入场码 + 地址地图 + 体育馆照片）
 ├── members.html          组织成员名单（架构图 + 职位卡片 + 名单总表）
-├── history.html          俱乐部历史（时间线 + 三阶段 + 照片墙占位）
+├── history.html          俱乐部历史（时间线 + 三阶段 + 照片墙）
 ├── recommend.html        俱乐部推荐（卖球 + 穿线价目）
 ├── gdufe.html            广东财经大学官网入口（官方链接合集）
 ├── miniprogram.html      微信小程序（小程序码位置 + 使用指引）
@@ -19,8 +20,8 @@
 ├── .nojekyll             GitHub Pages 用，防止忽略下划线文件
 ├── assets/
 │   ├── css/style.css     全部样式（设计变量集中在文件顶部）
-│   ├── js/main.js        导航、动效、倒计时、筛选、复制
-│   └── img/              favicon、小程序码占位图、分享封面 og-cover.png
+│   ├── js/main.js        导航、动效、板块目录联动、复制
+│   └── img/              favicon、二维码、场馆照片、校园地图
 ├── 资源/                 可下载文件（CSV / Markdown）
 ├── 本地预览.bat          一键本地预览（127.0.0.1:8766）
 ├── 设置域名.bat          一键把 your-domain.com 换成你的域名
@@ -39,41 +40,36 @@
 
 ## 三、需要你补充的内容
 
-搜索这几个关键词即可定位：
-
 | 关键词 | 位置 | 说明 |
 | --- | --- | --- |
-| `待填写` | `members.html`（卡片 + 表格） | 成员姓名、年级学院 |
-| `20XX` | `history.html` | 历史年份 |
-| `qr-art.svg` / `此处放置小程序码` | `miniprogram.html` | 换成正式小程序码 |
-| `2981516286` | 多个页面 | 换成俱乐部实际 QQ 号 |
-| 照片位 | `history.html` | 换成活动照片 |
+| `小程序码待上线` | `index.html`、`activity.html`、`miniprogram.html` | 换成正式小程序码 |
+| `内容整理中` / `这一块还空着` | `index.html`（校友会活动、高校联盟） | 有内容后替换整块 `empty-panel` |
+| 邓同学 | `index.html`、`members.html` | 补职务与分工 |
+| 入场二维码 | `activity.html`（`entry-qr-*.jpg`） | 每周替换成本周的两张入场码截图 |
 
-### 1. 成员名单
+### 1. 板块目录
 
-`members.html` 里两处要改：
+首页最上面是一条横幅目录（8 个板块）：首页 / 校友会活动 / 校内活动 / 比赛 / 高校联盟 / 俱乐部 / 广财官网 / 加入我们。
+点目录里的名字会跳到首页对应区块，`assets/js/main.js` 第 9 段负责高亮当前区块。增删板块要同时改三处：
+`index.html` 的 `.section-bar`、`.nav`，以及 `main.js` 里的 `menuFor` 映射。
 
-1. 主席团 / 部门卡片中的 `<span class="name is-todo">待填写</span>` → 真实姓名；
-   头像里的单字（`会`、`训`、`联`…）建议改成姓名首字。
-2. 下部「名单总表」表格的 `<td class="is-todo">待填写</td>` → 姓名 / 年级学院。
+### 2. 两个大方块
 
-改完后可以删掉 `.is-todo` 这个 class，虚线样式就会消失。
+目录下面两个大方块固定是「校友会活动」（上）和「校内活动」（下），代码是 `.entry-stack > .entry-tile`。
 
-### 2. 历史年份
+### 3. 校内活动与入场码
 
-`history.html` 时间线里搜 `20XX`，改成真实年份；同时建议把「年份与事件待核实」那段提示删掉。照片墙占位块换成：
+`activity.html` 一处放三场活动、本周入场码、地址地图和体育馆照片。
+换入场码：把新截图裁成只剩预约卡（去掉状态栏和底部工具栏），存成
+`assets/img/entry-qr-court2.jpg` / `entry-qr-court4.jpg`，再改 `figcaption` 里的日期和场地。
 
-```html
-<img src="assets/img/2024-first-event.jpg" alt="2024 年第一次活动合影">
-```
-
-### 3. 小程序码
+### 4. 小程序码
 
 1. 微信公众平台 → 设置 → 基本设置 → 小程序码，下载 PNG；
 2. 改名为 `miniapp-qr.png`，放进 `assets/img/`；
-3. 把 `miniprogram.html` 中 `qr-frame` 里的占位 `img` 与 `.qr-tip` 替换掉（页面底部有代码片段）。
+3. 把 `index.html` / `activity.html` 的 `.qr-frame--sm` 占位换成 `<img>`，并在 `miniprogram.html` 同步。
 
-### 4. 换主题色
+### 5. 换主题色
 
 `assets/css/style.css` 顶部的 `:root` 里改 `--green-*` 与 `--lime` 即可，全站生效。
 
@@ -123,7 +119,7 @@ git push -u origin main
 - **字体**：系统字体栈（Inter / 苹方 / 微软雅黑），不依赖外网字体，离线也一致
 - **响应式**：1200 / 980 / 720 / 420 四档断点，手机端自动折叠导航
 - **无障碍**：键盘可操作、`aria-expanded` 状态、对比度满足正文阅读、支持 `prefers-reduced-motion`
-- **动态**：放场倒计时按北京时间计算，每页共用一份 `main.js`
+- **动态**：首页板块目录随滚动高亮当前区块；每页共用一份 `main.js`
 - **无需联网**：所有图形都是内联 SVG 或 CSS 绘制
 
 ## 七、免责说明
