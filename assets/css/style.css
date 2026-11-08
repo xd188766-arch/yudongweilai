@@ -1021,6 +1021,8 @@ table.t-roster{min-width:760px}
 }
 .act-day b{font-size:22px; font-weight:800; line-height:1.05; letter-spacing:-.02em}
 .act-day em{font-style:normal; font-size:10px; font-weight:700; letter-spacing:.16em; color:var(--lime)}
+.act-day--other{background:linear-gradient(150deg,var(--green-700),var(--green-500))}
+.act-day--other em{color:#f0ffd0}
 .act-body{flex:1; min-width:0}
 .act-name{display:block; font-size:18px; font-weight:750; letter-spacing:-.01em}
 .act-desc{display:block; font-size:13.5px; color:var(--muted); margin-top:3px; line-height:1.55}

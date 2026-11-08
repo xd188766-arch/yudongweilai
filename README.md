@@ -7,7 +7,11 @@
 ```
 羽动未来官网/
 ├── index.html            首页（横幅板块目录 + 校友会活动 / 校内活动两个大方块 + 场馆照片 + 比赛 + 俱乐部 + 加入我们）
-├── activity.html         校内活动详情（三场活动 + 本周入场码 + 地址地图 + 体育馆照片）
+├── activity.html         校内活动总览（4 个入口 + 地址地图 + 体育馆照片）
+├── activity-mon.html     周一新手场（独立页面）
+├── activity-wed.html     周三训练场（独立页面）
+├── activity-fri.html     周五固定搭档 PK（独立页面）
+├── activity-other.html   其他天活动（本周入场码 + 地址 + 体育馆照片）
 ├── members.html          组织成员名单（架构图 + 职位卡片 + 名单总表）
 ├── history.html          俱乐部历史（时间线 + 三阶段 + 照片墙）
 ├── recommend.html        俱乐部推荐（卖球 + 穿线价目）
@@ -44,8 +48,8 @@
 | --- | --- | --- |
 | `小程序码待上线` | `index.html`、`activity.html`、`miniprogram.html` | 换成正式小程序码 |
 | `内容整理中` / `这一块还空着` | `index.html`（校友会活动、高校联盟） | 有内容后替换整块 `empty-panel` |
-| 邓同学 | `index.html`、`members.html` | 补职务与分工 |
-| 入场二维码 | `activity.html`（`entry-qr-*.jpg`） | 每周替换成本周的两张入场码截图 |
+| 邓同学 / 冯同学 | `index.html`、`members.html` | 邓同学＝联合创始人，冯同学＝创始人（不再用「群主」） |
+| 入场二维码 | `activity-other.html`（`entry-qr-*.jpg`） | 每周替换成本周的两张入场码截图 |
 
 ### 1. 板块目录
 
@@ -59,9 +63,13 @@
 
 ### 3. 校内活动与入场码
 
-`activity.html` 一处放三场活动、本周入场码、地址地图和体育馆照片。
-换入场码：把新截图裁成只剩预约卡（去掉状态栏和底部工具栏），存成
-`assets/img/entry-qr-court2.jpg` / `entry-qr-court4.jpg`，再改 `figcaption` 里的日期和场地。
+`activity.html` 是总览：4 个入口（周一新手场 / 周三训练场 / 周五固定搭档 PK / 其他天活动）+ 地址 + 体育馆照片。
+每个入口点进去是自己的页面：`activity-mon.html`、`activity-wed.html`、`activity-fri.html`、`activity-other.html`。
+
+- **入场码只在 `activity-other.html`**（周中加场、周末场）。换码：把新截图裁成只剩预约卡（去掉状态栏和底部工具栏），
+  存成 `assets/img/entry-qr-court2.jpg` / `entry-qr-court4.jpg`，再改 `figcaption` 里的日期和场地。
+- 三个固定场次页不放入场码图片，只写「开打前 2 小时俱乐部发到群里」，再链到其他天页。
+- 这 4 个页面是同一套模板生成的（`probe/build_activity_pages.py`），改完模板重跑脚本即可；直接改 HTML 也行。
 
 ### 4. 小程序码
 
